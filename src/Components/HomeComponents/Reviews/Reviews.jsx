@@ -8,8 +8,7 @@ import "swiper/css";
 import "swiper/css/effect-cards";
 import "./Reviews.css";
 
-const PARACHUTE_IMG =
-    "https://bucketlistt-web.s3.ap-south-1.amazonaws.com/uploads/images/ReviewCardPrachuteImage.png";
+const PARACHUTE_IMG = "/Images/dolphine-png.png";
 
 const StarRating = ({ count }) => (
     <div className="review-card__stars" aria-label={`${count} out of 5 stars`}>
@@ -85,7 +84,7 @@ const Reviews = () => {
                             <SwiperSlide key={review.id} className="reviews-slide">
                                 <div className="review-card">
 
-                                    {/* Watermark parachute */}
+                                    {/* Watermark dolphin */}
                                     <div className="review-card__parachute-wrap">
                                         <img
                                             src={PARACHUTE_IMG}

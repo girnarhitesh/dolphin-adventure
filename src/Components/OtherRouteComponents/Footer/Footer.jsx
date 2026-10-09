@@ -8,7 +8,7 @@ import {
 import {
     FaFacebookF,
     FaInstagram,
-    FaYoutube
+    FaWhatsapp
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Footer.css";
@@ -37,24 +37,24 @@ const Footer = () => {
                             destination.
                         </p>
                         <div className="footer-contact">
-                            <a href="tel:+916397997489" className="contact-item">
+                            <a href="tel:+917201060500" className="contact-item">
                                 <MdPhone size={18} />
-                                <span>+91 63979 97489</span>
+                                <span>+91 7201060500</span>
                             </a>
-                            <a href="mailto:info@whynotfly.com" className="contact-item">
+                            <a href="mailto:info@beytdwarka.com" className="contact-item">
                                 <MdEmail size={18} />
-                                <span>info@whynotfly.com</span>
+                                <span>info@beytdwarka.com</span>
                             </a>
                         </div>
                         <div className="footer-social">
-                            <a href="https://www.facebook.com/people/Why-Not-Fly/61572874630150/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
+                            <a href="https://www.facebook.com/ajay.kateshiya.manu247" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
                                 <FaFacebookF size={16} />
                             </a>
-                            <a href="https://www.instagram.com/whynotfly.in/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
+                            <a href="https://www.instagram.com/beytdwarka_tourism?igsh=b3NyNHQ2dnRnYWhr" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
                                 <FaInstagram size={16} />
                             </a>
-                            <a href="https://www.youtube.com/@WhyNotFly_Rishikesh" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="YouTube">
-                                <FaYoutube size={16} />
+                            <a href="https://api.whatsapp.com/send/?phone=917201060500&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="WhatsApp">
+                                <FaWhatsapp size={16} />
                             </a>
                         </div>
                     </div>

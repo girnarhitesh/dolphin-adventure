@@ -1,7 +1,7 @@
 import { Routes, Route, useLocation } from "react-router-dom";
 import React, { useEffect } from "react";
-import HeroRoute from "./Components/HomeComponents/HeroRoutes/HeroRoute";
-import Footer from "./Components/OtherRouteComponents/Footer/Footer";
+import HeroRoute from "./components/HomeComponents/HeroRoutes/HeroRoute";
+import Footer from "./components/OtherRouteComponents/Footer/Footer";
 import NotFound from "./Components/OtherRouteComponents/NotFound/NotFound";
 import { BookingProvider } from "./Context/BookingContext";
 import BookingModal from "./Components/CommonComponents/BookingModal/BookingModal";
