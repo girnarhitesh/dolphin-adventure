@@ -114,7 +114,7 @@
   align-items: flex-end;
   min-width: 0;
   max-width: 100%;
-  padding-bottom: 9%;
+  padding-bottom: clamp(104px, 13vh, 132px);
   pointer-events: auto;
   /* Re-enable pointer events for buttons */
 }
@@ -270,62 +270,65 @@
 /* ── Highlight strip ────────────────────────── */
 .hero-highlights {
   display: flex;
-  align-items: stretch;
-  width: 100%;
+  align-items: center;
+  flex-wrap: wrap;
+  width: fit-content;
   max-width: 100%;
-  margin: 0;
-  padding: 6px 2px;
+  margin: 6px 0 0;
+  padding: 8px 6px;
   list-style: none;
-  background: rgba(255, 255, 255, 0.96);
-  border-radius: 16px;
-  box-shadow: 0 12px 28px rgba(var(--primary-rgb), 0.18);
+  background: rgba(8, 27, 48, 0.46);
+  border: 1px solid rgba(255, 255, 255, 0.16);
+  border-radius: 18px;
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  box-shadow: 0 14px 32px rgba(6, 18, 34, 0.22);
 }
 
 .hero-highlight {
   position: relative;
   display: flex;
   align-items: center;
-  flex: 1 1 0;
-  min-width: 0;
-  gap: 6px;
-  padding: 4px 8px;
+  gap: 10px;
+  padding: 6px 16px;
 }
 
 .hero-highlight__divider {
   position: absolute;
   left: 0;
-  top: 6px;
-  bottom: 6px;
+  top: 10px;
+  bottom: 10px;
   width: 1px;
-  background: rgba(var(--primary-rgb), 0.14);
+  background: rgba(255, 255, 255, 0.2);
 }
 
 .hero-highlight__icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
   flex-shrink: 0;
-  color: var(--primary);
-  background: rgba(var(--primary-rgb), 0.1);
+  color: var(--on-primary);
+  background: rgba(255, 255, 255, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.16);
 }
 
 .hero-highlight__icon--accent {
-  color: var(--secondary-dark);
-  background: rgba(var(--secondary-rgb), 0.2);
+  color: #fff;
+  background: var(--secondary);
+  border-color: transparent;
 }
 
 .hero-highlight__label {
   font-family: var(--font-body);
-  font-size: 9px;
-  font-weight: 700;
-  line-height: 1.25;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
   white-space: nowrap;
-  color: var(--primary);
+  color: #fff;
 }
 
 .hero-badge__icon {
@@ -635,7 +638,7 @@
 /* ── Scroll hint ────────────────────────────── */
 .hero-scroll-hint {
   position: absolute;
-  bottom: 40px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
   z-index: var(--hero-z-ui);
@@ -643,28 +646,41 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.86);
+  cursor: pointer;
 }
 
-.hero-scroll-hint span {
-  font-size: 11px;
-  font-weight: 500;
-  letter-spacing: 0.18em;
+.hero-scroll-hint:focus-visible {
+  outline: 2px solid var(--secondary);
+  outline-offset: 6px;
+  border-radius: 4px;
+}
+
+.hero-scroll-hint > span:first-child {
+  font-family: var(--font-body);
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.22em;
   text-transform: uppercase;
-  color: var(--hero-white-40);
 }
 
 .hero-scroll-line {
   width: 1px;
-  height: 42px;
-  background: rgba(255, 255, 255, 0.15);
+  height: 34px;
+  background: rgba(255, 255, 255, 0.22);
   border-radius: 1px;
   overflow: hidden;
 }
 
 .hero-scroll-line__inner {
+  display: block;
   width: 100%;
   height: 50%;
-  background: var(--hero-white-70);
+  background: var(--secondary);
   border-radius: 1px;
   animation: scrollDrop 2s ease-in-out infinite;
 }
@@ -684,7 +700,7 @@
 /* ── Responsive ─────────────────────────────── */
 @media (max-width: 768px) {
   .hero-content-wrapper {
-    padding: 0 6% 8%;
+    padding: 0 6% 108px;
     align-items: flex-end;
   }
 
@@ -694,22 +710,16 @@
   }
 
   .hero-scroll-hint {
-    display: none;
+    bottom: 12px;
   }
 
   .hero-highlight {
-    gap: 4px;
-    padding: 4px 6px;
-  }
-
-  .hero-highlight__icon {
-    width: 24px;
-    height: 24px;
+    gap: 8px;
+    padding: 6px 12px;
   }
 
   .hero-highlight__label {
-    font-size: 8px;
-    letter-spacing: 0.02em;
+    font-size: 12px;
   }
 
   .hero-right-panel{
@@ -719,19 +729,17 @@
 
 @media (max-width: 640px) {
   .hero-highlights {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    gap: 6px 0;
     width: 100%;
+    gap: 4px 0;
   }
 
   .hero-highlight {
+    flex: 1 1 46%;
     min-width: 0;
   }
 
-  .hero-highlight:last-child {
-    grid-column: 1 / -1;
-    justify-content: center;
+  .hero-highlight__label {
+    white-space: normal;
   }
 
   .hero-highlight__divider {
@@ -741,7 +749,7 @@
 
 @media (max-width: 480px) {
   .hero-content-wrapper {
-    padding: 5% 0%;
+    padding: 5% 0 96px;
   }
 
   .hero-btn {

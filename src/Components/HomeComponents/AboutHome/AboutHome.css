@@ -14,12 +14,13 @@
     right: -4%;
     width: 55%;
     height: 110%;
-    background-image: url('https://bucketlistt-web.s3.ap-south-1.amazonaws.com/uploads/images/WhyNotFlyParachuteImage.png');
+    background-image: url('/Images/dolphinImage.png');
     background-repeat: no-repeat;
     background-size: contain;
     background-position: center right;
     opacity: 0.09;
     transform: perspective(900px) rotateY(-18deg) rotateX(6deg) scale(1.1);
+    scale: -1 1;
     transform-origin: right center;
     pointer-events: none;
     z-index: 0;
