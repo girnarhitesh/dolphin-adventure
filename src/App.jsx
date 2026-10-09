@@ -2,15 +2,15 @@ import { Routes, Route, useLocation } from "react-router-dom";
 import React, { useEffect } from "react";
 import HeroRoute from "./components/HomeComponents/HeroRoutes/HeroRoute";
 import Footer from "./components/OtherRouteComponents/Footer/Footer";
-import NotFound from "./Components/OtherRouteComponents/NotFound/NotFound";
+import NotFound from "./components/OtherRouteComponents/NotFound/NotFound";
 import { BookingProvider } from "./Context/BookingContext";
 import BookingModal from "./Components/CommonComponents/BookingModal/BookingModal";
 import Navigation from "./Components/OtherRouteComponents/Navigation/Navigation";
 import FloatingCallButton from "./Components/OtherRouteComponents/FloatingCallButton/FloatingCallButton";
-import PrivacyPolicy from "./Components/OtherRouteComponents/PrivacyPolicy/PrivacyPolicy";
-import TermsAndConditions from "./Components/OtherRouteComponents/TermsAndConditions/TermsAndConditions";
-import RefundPolicy from "./Components/OtherRouteComponents/RefundPolicy/RefundPolicy";
-import LiabilityWaiver from "./Components/OtherRouteComponents/LiabilityWaiver/LiabilityWaiver";
+import PrivacyPolicy from "./components/OtherRouteComponents/PrivacyPolicy/PrivacyPolicy";
+import TermsAndConditions from "./components/OtherRouteComponents/TermsAndConditions/TermsAndConditions";
+import RefundPolicy from "./components/OtherRouteComponents/RefundPolicy/RefundPolicy";
+import LiabilityWaiver from "./components/OtherRouteComponents/LiabilityWaiver/LiabilityWaiver";
 //import SiteMap from "./Components/OtherRouteComponents/SiteMap/SiteMap";
 
 // Helper component to handle smooth scrolling to hashes across pages

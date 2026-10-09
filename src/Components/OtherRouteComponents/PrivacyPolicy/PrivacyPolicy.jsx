@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./PrivacyPolicy.css";
 import Navigation from "../Navigation/Navigation";
 import Footer from "../Footer/Footer";
@@ -7,7 +8,6 @@ import Button from "../../../CommonComponents/Button/Button";
 import { FaPhone } from "react-icons/fa";
 
 const PrivacyPolicy = () => {
-    // Scroll to top on mount
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -16,74 +16,70 @@ const PrivacyPolicy = () => {
         <div className="privacy-page">
             <Navigation />
 
-            {/* Header Section */}
             <section className="privacy-hero">
                 <div className="privacy-hero-overlay"></div>
                 <div className="wnf-container">
                     <div className="privacy-hero-content">
-                        {/* <span className="privacy-badge">Legal</span> */}
                         <h1>Privacy Policy</h1>
-                        <p className="last-updated">Last Updated: 1 Jan 2025</p>
+                        <p className="last-updated">Last Updated: 10 Oct 2026</p>
                     </div>
                 </div>
             </section>
 
-            {/* Content Section */}
             <section className="privacy-content-section">
                 <div className="wnf-container">
                     <div className="privacy-card">
                         <div className="privacy-intro">
                             <p>
-                                At <strong>Why Not Fly</strong>, we are committed to protecting your privacy. This Privacy Policy outlines how we collect, use, and safeguard your personal information.
+                                <strong>Dolphin Adventure</strong> at Beyt Dwarka collects only what we need to book your water sports, dolphin exploration, bonfire, and beach stays, and to keep guests safe on the water and on the campsite.
                             </p>
                         </div>
 
                         <div className="privacy-grid">
-                            {/* Section 1 */}
                             <div className="privacy-section">
                                 <div className="section-header">
                                     <span className="section-num">01</span>
                                     <h2>Information We Collect</h2>
                                 </div>
                                 <ul className="privacy-list">
-                                    <li><strong>Personal details</strong> (Name, Email, Phone, Address) when booking a flight.</li>
-                                    <li><strong>Payment details</strong> (processed securely via third-party payment gateways).</li>
-                                    <li><strong>Browsing data</strong> (cookies, IP address) for website improvement.</li>
+                                    <li><strong>Booking details</strong> such as your name, phone number, email, number of guests, and the activity or stay you choose.</li>
+                                    <li><strong>Safety details</strong> when an activity needs them, including age and weight for parasailing, jet ski, banana ride, sofa ride, and ATV.</li>
+                                    <li><strong>Stay details</strong> such as check-in date, tent or AC container preference, and meal requirements for Beach Camping or Beach Stay.</li>
+                                    <li><strong>Payment details</strong>, which are handled by our payment partners. We do not store your full card number.</li>
+                                    <li><strong>Website data</strong> such as cookies and IP address, used to keep the site working and to understand how it is used.</li>
                                 </ul>
                             </div>
 
-                            {/* Section 2 */}
                             <div className="privacy-section">
                                 <div className="section-header">
                                     <span className="section-num">02</span>
                                     <h2>How We Use Your Information</h2>
                                 </div>
                                 <ul className="privacy-list">
-                                    <li>To <strong>confirm bookings</strong> and process payments.</li>
-                                    <li>To <strong>send updates</strong>, offers, and promotional content.</li>
-                                    <li>To <strong>improve our website</strong> and customer experience.</li>
+                                    <li>To confirm bookings for parasailing, jet ski, speed boat, banana ride, sofa ride, ATV, dolphin exploration, bonfire, and camp stays.</li>
+                                    <li>To check age and weight limits and to brief guests before an activity.</li>
+                                    <li>To send booking updates, timing changes caused by weather or sea conditions, and replies to your questions.</li>
+                                    <li>To improve this website. We do not sell your information.</li>
                                 </ul>
                             </div>
 
-                            {/* Section 3 */}
                             <div className="privacy-section">
                                 <div className="section-header">
                                     <span className="section-num">03</span>
-                                    <h2>Data Protection</h2>
+                                    <h2>Who We Share It With</h2>
                                 </div>
                                 <p>
-                                    We implement <strong>strict security measures</strong> to protect your personal data and do not sell or share your information with third parties.
+                                    We share booking and payment details only with the staff running your activity or stay, and with the payment service that processes your UPI or card payment. We do not share your details with other businesses for their own marketing.
                                 </p>
                             </div>
 
-                            {/* Section 4 */}
                             <div className="privacy-section">
                                 <div className="section-header">
                                     <span className="section-num">04</span>
                                     <h2>Your Rights</h2>
                                 </div>
                                 <p>
-                                    You can request access, modification, or deletion of your personal data by contacting us at <a href="mailto:info@whynotfly.in">info@whynotfly.in</a>. For more details, read our full Privacy Policy or contact us.
+                                    You can ask to see, correct, or delete the personal details we hold. Write to <a href="mailto:info@beytdwarka.com">info@beytdwarka.com</a> or call <a href="tel:+917201060500">+91 7201060500</a>. We may keep a booking record where we need it for accounts, refunds, or a safety incident. Read our <Link to="/terms-and-conditions">Terms & Conditions</Link> for how bookings work.
                                 </p>
                             </div>
                         </div>
@@ -91,7 +87,7 @@ const PrivacyPolicy = () => {
                         <div className="privacy-contact-cta MarginTop30px PaddingTop30px">
                             <p>Have questions about your privacy? We're here to help.</p>
                             <Button
-                                href="tel:+916397997489"
+                                href="tel:+917201060500"
                                 icon={<FaPhone />}
                             >
                                 Contact Support

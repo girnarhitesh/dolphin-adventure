@@ -20,8 +20,8 @@ const NotFound = () => {
                     <span className="not-found__digit">4</span>
                     <div className="not-found__glider-box">
                         <img
-                            src="https://bucketlistt-web.s3.ap-south-1.amazonaws.com/uploads/images/WhyNotFlyParachuteImage.png"
-                            alt="Lost Paraglider"
+                            src="/Images/dolphine-png.png"
+                            alt="Dolphin"
                             className="not-found__glider"
                         />
                         <span className="not-found__digit">0</span>

@@ -85,16 +85,17 @@
 
 .not-found__glider {
     position: absolute;
-    width: clamp(80px, 15vw, 160px);
+    width: clamp(110px, 16vw, 190px);
     height: auto;
     z-index: 1;
-    transform: rotate(15deg);
+    filter: brightness(1.7) drop-shadow(0 10px 18px rgba(0, 0, 0, 0.35));
+    transform: rotate(-8deg);
     animation: nfGliderDrift 6s ease-in-out infinite alternate;
 }
 
 @keyframes nfGliderDrift {
-    from { transform: rotate(15deg) translateY(0); }
-    to { transform: rotate(10deg) translateY(-20px); }
+    from { transform: rotate(-8deg) translateY(0); }
+    to { transform: rotate(-4deg) translateY(-20px); }
 }
 
 /* Content */

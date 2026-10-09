@@ -1,4 +1,5 @@
 import React, { useEffect } from "react";
+import { Link } from "react-router-dom";
 import "./RefundPolicy.css";
 import Navigation from "../Navigation/Navigation";
 import Footer from "../Footer/Footer";
@@ -7,7 +8,6 @@ import Button from "../../../CommonComponents/Button/Button";
 import { FaPhone } from "react-icons/fa";
 
 const RefundPolicy = () => {
-    // Scroll to top on mount
     useEffect(() => {
         window.scrollTo(0, 0);
     }, []);
@@ -15,73 +15,91 @@ const RefundPolicy = () => {
     return (
         <div className="refund-page">
             <Navigation />
-            
-            {/* Header Section */}
+
             <section className="refund-hero">
                 <div className="refund-hero-overlay"></div>
                 <div className="wnf-container">
                     <div className="refund-hero-content">
                         <h1>Refund & Cancellation Policy</h1>
-                        <p className="last-updated">Last Updated: 1 Jan 2025</p>
+                        <p className="last-updated">Last Updated: 10 Oct 2026</p>
                     </div>
                 </div>
             </section>
 
-            {/* Content Section */}
             <section className="refund-content-section">
                 <div className="wnf-container">
                     <div className="refund-card">
                         <div className="refund-intro">
                             <p>
-                                We strive to offer the best paragliding experience. However, we understand that plans can change. Below is our refund and cancellation policy:
+                                This policy covers every booking with <strong>Dolphin Adventure</strong> at Beyt Dwarka: parasailing, jet ski, speed boat, banana ride, sofa ride, ATV, dolphin exploration, the camping bonfire, Beach Camping, and Beach Stay. The same windows are listed in our <Link to="/terms-and-conditions">Terms & Conditions</Link>.
                             </p>
                         </div>
 
                         <div className="refund-grid">
-                            {/* Section 1 */}
                             <div className="refund-section">
-                                <div classNa    me="section-header">
+                                <div className="section-header">
                                     <span className="section-num">01</span>
-                                    <h2>Cancellation by Customer</h2>
+                                    <h2>Day Activities</h2>
                                 </div>
+                                <p>
+                                    Parasailing, jet ski, speed boat, banana ride, sofa ride, and ATV are counted from the booked start time.
+                                </p>
                                 <ul className="refund-list">
-                                    <li><strong>72+ hours before flight:</strong> Full refund.</li>
-                                    <li><strong>24-72 hours before flight:</strong> 50% refund.</li>
-                                    <li><strong>Less than 24 hours:</strong> No refund.</li>
+                                    <li><strong>More than 48 hours before:</strong> full refund.</li>
+                                    <li><strong>24 to 48 hours before:</strong> 50% refund.</li>
+                                    <li><strong>Less than 24 hours, or a no-show:</strong> no refund.</li>
                                 </ul>
                             </div>
 
-                            {/* Section 2 */}
                             <div className="refund-section">
                                 <div className="section-header">
                                     <span className="section-num">02</span>
-                                    <h2>Cancellation by Us</h2>
+                                    <h2>Camp Stays</h2>
                                 </div>
                                 <p>
-                                    We may cancel flights due to weather conditions or safety concerns. In such cases:
+                                    Beach Camping and Beach Stay are counted from check-in. The bonfire, meals, and dolphin exploration included with a stay follow the stay booking.
                                 </p>
                                 <ul className="refund-list">
-                                    <li>You will receive a <strong>full refund</strong></li>
-                                    <li>You can <strong>reschedule</strong> at no extra cost.</li>
+                                    <li><strong>More than 7 days before check-in:</strong> full refund.</li>
+                                    <li><strong>3 to 7 days before check-in:</strong> 50% refund.</li>
+                                    <li><strong>Inside 72 hours, or a no-show:</strong> no refund.</li>
                                 </ul>
                             </div>
 
-                            {/* Section 3 */}
                             <div className="refund-section">
                                 <div className="section-header">
                                     <span className="section-num">03</span>
-                                    <h2>Refund Process</h2>
+                                    <h2>When We Cancel</h2>
                                 </div>
                                 <p>
-                                    Refunds are processed within <strong>5-7 business days</strong> via the original payment method.
+                                    We may cancel or move an activity or stay for weather, sea conditions, or safety. You can take a full refund or a free reschedule.
                                 </p>
+                                <ul className="refund-list">
+                                    <li>A ride stopped because a guest is unsafe, or under the influence of alcohol or drugs, is not refunded.</li>
+                                    <li>A guest outside the age or weight limit for that activity cannot take part and is not refunded if they arrive anyway.</li>
+                                </ul>
+                            </div>
+
+                            <div className="refund-section">
+                                <div className="section-header">
+                                    <span className="section-num">04</span>
+                                    <h2>How Refunds Are Paid</h2>
+                                </div>
+                                <p>
+                                    Approved refunds go back to the original UPI or card payment within <strong>5 to 7 business days</strong>.
+                                </p>
+                                <ul className="refund-list">
+                                    <li><strong>Phone:</strong> <a href="tel:+917201060500">+91 7201060500</a></li>
+                                    <li><strong>Email:</strong> <a href="mailto:info@beytdwarka.com">info@beytdwarka.com</a></li>
+                                    <li><strong>Address:</strong> Dolphin Adventure, Beyt Dwarka, Gujarat, India</li>
+                                </ul>
                             </div>
                         </div>
 
                         <div className="refund-contact-cta MarginTop30px">
-                            <p>For cancellations or refund inquiries, please contact our support team.</p>
+                            <p>To cancel a booking, call or write to us with your name and the activity or stay date.</p>
                             <Button
-                                href="tel:+916397997489"
+                                href="tel:+917201060500"
                                 icon={<FaPhone />}
                             >
                                 Contact Support
