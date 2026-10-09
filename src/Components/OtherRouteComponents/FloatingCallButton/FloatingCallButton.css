@@ -13,14 +13,14 @@
     z-index: 999;
     cursor: pointer;
     text-decoration: none;
-    box-shadow: 0 4px 15px rgba(241, 153, 34, 0.3);
+    box-shadow: 0 4px 15px rgba(var(--secondary-rgb), 0.3);
     transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
 }
 
 .floating-call-btn:hover {
     transform: scale(1.1);
     background: linear-gradient(135deg, var(--primary-light) 0%, var(--accent-secondary) 100%);
-    box-shadow: 0 8px 25px rgba(241, 153, 34, 0.5);
+    box-shadow: 0 8px 25px rgba(var(--secondary-rgb), 0.5);
 }
 
 .icon-layer {

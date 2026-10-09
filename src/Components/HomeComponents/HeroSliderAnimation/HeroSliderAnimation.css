@@ -54,7 +54,7 @@
   bottom: -160px;
   left: -140px;
   background: radial-gradient(circle,
-      rgba(19, 64, 112, 0.30) 0%,
+      rgba(var(--primary-rgb), 0.30) 0%,
       transparent 70%);
   animation: orbFloat1 9s ease-in-out infinite alternate;
 }
@@ -65,7 +65,7 @@
   top: -80px;
   right: 10%;
   background: radial-gradient(circle,
-      rgba(31, 92, 153, 0.20) 0%,
+      rgba(var(--primary-light-rgb), 0.20) 0%,
       transparent 70%);
   animation: orbFloat2 12s ease-in-out infinite alternate;
 }
@@ -278,7 +278,7 @@
   list-style: none;
   background: rgba(255, 255, 255, 0.96);
   border-radius: 16px;
-  box-shadow: 0 12px 28px rgba(19, 64, 112, 0.18);
+  box-shadow: 0 12px 28px rgba(var(--primary-rgb), 0.18);
 }
 
 .hero-highlight {
@@ -297,7 +297,7 @@
   top: 6px;
   bottom: 6px;
   width: 1px;
-  background: rgba(19, 64, 112, 0.14);
+  background: rgba(var(--primary-rgb), 0.14);
 }
 
 .hero-highlight__icon {
@@ -309,12 +309,12 @@
   justify-content: center;
   flex-shrink: 0;
   color: var(--primary);
-  background: rgba(19, 64, 112, 0.1);
+  background: rgba(var(--primary-rgb), 0.1);
 }
 
 .hero-highlight__icon--accent {
-  color: #c47a10;
-  background: rgba(241, 153, 34, 0.2);
+  color: var(--secondary-dark);
+  background: rgba(var(--secondary-rgb), 0.2);
 }
 
 .hero-highlight__label {
@@ -402,7 +402,7 @@
   z-index: 1;
   /* Layered drops: brand blue base + white cloud wisps at multiple offsets */
   filter:
-    drop-shadow(0 6px 16px rgba(19, 64, 112, 0.45)) drop-shadow(0 -6px 14px rgba(255, 255, 255, 0.25)) drop-shadow(6px 0 12px rgba(255, 255, 255, 0.18)) drop-shadow(-4px 4px 10px rgba(255, 255, 255, 0.20));
+    drop-shadow(0 6px 16px rgba(var(--primary-rgb), 0.45)) drop-shadow(0 -6px 14px rgba(255, 255, 255, 0.25)) drop-shadow(6px 0 12px rgba(255, 255, 255, 0.18)) drop-shadow(-4px 4px 10px rgba(255, 255, 255, 0.20));
   animation: gliderSway 6s ease-in-out infinite alternate;
 }
 
@@ -551,7 +551,7 @@
   width: 28px;
   height: 28px;
   border-radius: 50%;
-  background: rgba(19, 64, 112, 0.35);
+  background: rgba(var(--primary-rgb), 0.35);
   animation: pinPulse 2.2s ease-out infinite;
 }
 
@@ -583,7 +583,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  box-shadow: 0 4px 14px rgba(19, 64, 112, 0.5);
+  box-shadow: 0 4px 14px rgba(var(--primary-rgb), 0.5);
 }
 
 .hero-loc-pin__icon svg {

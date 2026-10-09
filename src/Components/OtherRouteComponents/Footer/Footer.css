@@ -86,7 +86,7 @@
     border-color: var(--primary);
     color: white;
     transform: translateY(-3px);
-    box-shadow: 0 5px 15px rgba(19, 64, 112, 0.4);
+    box-shadow: 0 5px 15px rgba(var(--primary-rgb), 0.4);
 }
 
 /* ── Links Columns ───────────────────────── */

@@ -1,5 +1,4 @@
-import { MdVideocam, MdVerified, MdAccessTime, MdArrowForward, MdDirectionsCar, MdTrendingUp } from "react-icons/md";
-import { FaMountain, FaArrowRight, FaCarSide } from "react-icons/fa";
+import { MdVerified, MdAccessTime, MdArrowForward, MdPerson, MdGroups, MdBeachAccess, MdRestaurant, MdMusicNote, MdAcUnit, MdBathroom, MdDirectionsBoat, MdLocalFireDepartment } from "react-icons/md";
 import Button from "../../../CommonComponents/Button/Button";
 import "./DolphinAdventureCard.css";
 import { useBooking } from "../../../Context/BookingContext";
@@ -8,50 +7,220 @@ const DOLPHIN_IMG = "/Images/dolphinImage.png";
 
 const FLY_PACKAGES = [
     {
-        id: "classic",
+        id: "parasailing",
         badge: "Most Popular",
         badgeType: "primary",
-        title: "Classic Flight",
-        subtitle: "Teaser Flight Experience",
-        duration: "7 – 11",
+        title: "Parasailing",
+        subtitle: "Fly Above the Arabian Sea",
+        duration: "5 – 8",
         durationUnit: "Minutes",
-        price: "₹3,800",
+        price: "₹1,500",
+        priceNote: "per person",
         description:
-            "Short, thrilling, and full of fun! Perfect for beginners, The Teaser Flight gives you an exciting paragliding experience. Feel the thrill of flying as you glide through the sky and enjoy the fresh air. Want more adventure? Ask your pilot for stunts! (Additional charges apply)",
+            "Rise high over the blue waters of Beyt Dwarka and take in the island, temple and coastline from the sky. Calm, smooth and unforgettable, perfect for first-timers too.",
         features: [
-            { icon: <MdVideocam size={16} />, label: "Complimentary GoPro Video" },
-            { icon: <FaCarSide size={16} />, label: "Gypsy Jungle Safari to Takeoff" },
-            { icon: <MdVerified size={16} />, label: "Certified Safety Gear" },
+            { icon: <MdVerified size={16} />, label: "Certified Safety Harness" },
+            { icon: <MdPerson size={16} />, label: "Experienced Captain" },
+            { icon: <MdDirectionsBoat size={16} />, label: "Life Jacket Provided" },
         ],
         meta: [
-            { label: "TIMING", value: "8:30 am – Sunset" },
-            { label: "ELIGIBILITY", value: "12 Years +" },
-            { label: "WEIGHT LIMIT", value: "30 – 95 kg" },
+            { label: "TIMING", value: "9:00 AM to Sunset" },
+            { label: "ELIGIBILITY", value: "10 Years +" },
+            { label: "WEIGHT LIMIT", value: "30 to 100 kg" },
         ],
-        bg: "https://images.unsplash.com/photo-1592208128295-5aaa34f1d72b?q=80&w=2200&auto=format&fit=crop",
+        bg: "https://images.unsplash.com/photo-1632904074880-b77f02b6d01e?q=80&w=2071&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
     {
-        id: "long",
-        badge: "Best Experience",
+        id: "jet-ski",
+        badge: "Thrill Pick",
         badgeType: "accent",
-        title: "Customised Long Flight",
-        subtitle: "Explorer Flight Experience",
-        duration: "16 – 25",
+        title: "Jet Ski Ride",
+        subtitle: "Speed Meets the Sea",
+        duration: "5 – 7",
         durationUnit: "Minutes",
-        price: "₹5,800",
+        price: "₹500",
+        priceNote: "per person",
         description:
-            "Relax, explore, and take in the beauty. If you want more time in the air, The Explorer Flight is for you! Glide for 20 to 30 minutes, soaking in breathtaking views as you roam across the valleys. It’s a peaceful, immersive experience—perfect for those who want to enjoy the scenery.",
+            "Feel the rush as you race across the waves on a powerful jet ski with a trained rider. Short, fast and full of splashes.",
         features: [
-            { icon: <MdVideocam size={16} />, label: "Complimentary GoPro Video" },
-            { icon: <FaCarSide size={16} />, label: "Gypsy Jungle Safari through Forest" },
-            { icon: <MdVerified size={16} />, label: "Certified Safety Gear" },
+            { icon: <MdPerson size={16} />, label: "Trained Rider" },
+            { icon: <MdDirectionsBoat size={16} />, label: "Life Jacket Provided" },
+            { icon: <MdBeachAccess size={16} />, label: "Beach Launch" },
         ],
         meta: [
-            { label: "TIMING", value: "11:30 am – 3:30 pm" },
+            { label: "TIMING", value: "9:00 AM to Sunset" },
             { label: "ELIGIBILITY", value: "12 Years +" },
-            { label: "WEIGHT LIMIT", value: "30 – 95 kg" },
+            { label: "WEIGHT LIMIT", value: "Up to 100 kg" },
         ],
-        bg: "https://images.unsplash.com/photo-1601893725892-358c5490ea65?q=80&w=2200&auto=format&fit=crop",
+        bg: "https://images.unsplash.com/photo-1628324814404-5e123cd10506?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+        id: "speed-boat",
+        badge: "Family Favourite",
+        badgeType: "accent",
+        title: "Speed Boat",
+        subtitle: "Cruise the Coast in Style",
+        duration: "10 – 15",
+        durationUnit: "Minutes",
+        price: "₹200",
+        priceNote: "per person",
+        description:
+            "Zip along the Beyt Dwarka coastline on a speed boat with sea breeze and open views all around. Great for groups and families.",
+        features: [
+            { icon: <MdPerson size={16} />, label: "Experienced Captain" },
+            { icon: <MdDirectionsBoat size={16} />, label: "Life Jacket Provided" },
+            { icon: <MdGroups size={16} />, label: "Group Friendly" },
+        ],
+        meta: [
+            { label: "TIMING", value: "9:00 AM to Sunset" },
+            { label: "ELIGIBILITY", value: "5 Years +" },
+            { label: "WEIGHT LIMIT", value: "No Limit" },
+        ],
+        bg: "https://images.unsplash.com/photo-1621932945904-c5be9be992d8?q=80&w=1065&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+        id: "banana-ride",
+        badge: "Group Fun",
+        badgeType: "accent",
+        title: "Banana Ride",
+        subtitle: "Hold On and Laugh Out Loud",
+        duration: "8 – 10",
+        durationUnit: "Minutes",
+        price: "₹200",
+        priceNote: "per person",
+        description:
+            "Hop on the banana boat with friends as it gets pulled across the sea, and try your best not to fall in. Pure fun, guaranteed laughs.",
+        features: [
+            { icon: <MdDirectionsBoat size={16} />, label: "Life Jacket Provided" },
+            { icon: <MdGroups size={16} />, label: "Group Ride" },
+            { icon: <MdPerson size={16} />, label: "Trained Staff" },
+        ],
+        meta: [
+            { label: "TIMING", value: "9:00 AM to Sunset" },
+            { label: "ELIGIBILITY", value: "8 Years +" },
+            { label: "WEIGHT LIMIT", value: "Up to 100 kg" },
+        ],
+        bg: "https://images.unsplash.com/photo-1755865984882-72738b754c39?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+        id: "sofa-ride",
+        badge: "Crowd Pleaser",
+        badgeType: "accent",
+        title: "Sofa Ride",
+        subtitle: "Sit Back and Bounce",
+        duration: "8 – 10",
+        durationUnit: "Minutes",
+        price: "₹200",
+        priceNote: "per person",
+        description:
+            "Relax on an inflatable sofa as the boat tows you across the waves with every bump and splash. Easy, exciting and great for all ages.",
+        features: [
+            { icon: <MdDirectionsBoat size={16} />, label: "Life Jacket Provided" },
+            { icon: <MdGroups size={16} />, label: "Up to 3 Riders" },
+            { icon: <MdPerson size={16} />, label: "Trained Staff" },
+        ],
+        meta: [
+            { label: "TIMING", value: "9:00 AM to Sunset" },
+            { label: "ELIGIBILITY", value: "8 Years +" },
+            { label: "WEIGHT LIMIT", value: "Up to 100 kg" },
+        ],
+        bg: "https://media-cdn.tripadvisor.com/media/attractions-splice-spp-674x446/15/54/ed/ed.jpg",
+    },
+    {
+        id: "atv-ride",
+        badge: "Off-Road",
+        badgeType: "accent",
+        title: "ATV Ride",
+        subtitle: "Rule the Sand",
+        duration: "10",
+        durationUnit: "Minutes",
+        price: "₹200",
+        priceNote: "per person",
+        description:
+            "Take control of an all-terrain quad bike and ride across the sandy beach at your own pace. A must for adventure lovers.",
+        features: [
+            { icon: <MdVerified size={16} />, label: "Helmet Provided" },
+            { icon: <MdBeachAccess size={16} />, label: "Guided Track" },
+            { icon: <MdBeachAccess size={16} />, label: "Beach Riding" },
+        ],
+        meta: [
+            { label: "TIMING", value: "9:00 AM to Sunset" },
+            { label: "ELIGIBILITY", value: "12 Years +" },
+            { label: "WEIGHT LIMIT", value: "Up to 110 kg" },
+        ],
+        bg: "https://images.unsplash.com/photo-1616310482838-faff673859e6?q=80&w=927&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+        id: "camping-bonfire",
+        badge: "Evening Special",
+        badgeType: "accent",
+        title: "Camping Bonfire",
+        subtitle: "Fire, Music and Starry Nights",
+        duration: "2 – 3",
+        durationUnit: "Hours",
+        price: "Included",
+        priceNote: "with camp stay",
+        description:
+            "End your day around a warm bonfire on the beach with DJ, garba and good company under the stars. The highlight of every camp stay.",
+        features: [
+            { icon: <MdMusicNote size={16} />, label: "DJ and Garba Night" },
+            { icon: <MdBeachAccess size={16} />, label: "Beach Seating" },
+            { icon: <MdRestaurant size={16} />, label: "Dinner Before Bonfire" },
+        ],
+        meta: [
+            { label: "TIMING", value: "8:00 PM onwards" },
+            { label: "ELIGIBILITY", value: "All Ages" },
+            { label: "WEIGHT LIMIT", value: "Not Applicable" },
+        ],
+        bg: "https://images.unsplash.com/photo-1596326270763-87f26e0f9225?q=80&w=987&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+        id: "beach-camping",
+        badge: "Best Value",
+        badgeType: "primary",
+        title: "Beach Camping",
+        subtitle: "Wake Up to the Waves",
+        duration: "1 Night",
+        durationUnit: "2 Days",
+        price: "Starts ₹2,999",
+        priceNote: "per person",
+        description:
+            "Stay in Swiss tents or AC containers on Beyt Dwarka's only campsite with on-site water sports. Includes meals, bonfire, sightseeing and dolphin exploration boat ride.",
+        features: [
+            { icon: <MdRestaurant size={16} />, label: "2 Breakfasts, Lunch, Dinner and High Tea" },
+            { icon: <MdLocalFireDepartment size={16} />, label: "Bonfire and DJ Night" },
+            { icon: <MdDirectionsBoat size={16} />, label: "Dolphin Exploration" },
+        ],
+        meta: [
+            { label: "TIMING", value: "Check-in 10:00 AM, Check-out 9:00 AM" },
+            { label: "ELIGIBILITY", value: "All Ages" },
+            { label: "WEIGHT LIMIT", value: "Not Applicable" },
+        ],
+        bg: "https://images.unsplash.com/photo-1678720021138-29ad07dd56ce?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    },
+    {
+        id: "beach-stay",
+        badge: "Quick Escape",
+        badgeType: "accent",
+        title: "Beach Stay",
+        subtitle: "One Night by the Sea",
+        duration: "1",
+        durationUnit: "Night",
+        price: "Starts ₹1,199",
+        priceNote: "per person",
+        description:
+            "A simple overnight stay on the private beach for travellers short on time. Arrive in the evening, enjoy dinner and a calm night, leave after breakfast.",
+        features: [
+            { icon: <MdRestaurant size={16} />, label: "Dinner and Breakfast" },
+            { icon: <MdBathroom size={16} />, label: "Attached Washroom" },
+            { icon: <MdAcUnit size={16} />, label: "AC Options Available" },
+        ],
+        meta: [
+            { label: "TIMING", value: "Check-in 5:00 PM, Check-out 8:30 AM" },
+            { label: "ELIGIBILITY", value: "All Ages" },
+            { label: "WEIGHT LIMIT", value: "Not Applicable" },
+        ],
+        bg: "https://images.unsplash.com/photo-1708149609521-d8d450aa44aa?q=80&w=1481&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
     },
 ];
 
@@ -72,7 +241,6 @@ const DolphinAdventureCard = () => {
                 <br />
             </div>
 
-            
             <div className="wnf-container fly-cards-grid">
                 {FLY_PACKAGES.map((pkg) => (
                     <article
@@ -146,7 +314,7 @@ const DolphinAdventureCard = () => {
                             <div className="fly-card__footer">
                                 <div className="fly-card__price">
                                     <span className="fly-card__price-value">{pkg.price}</span>
-                                    <span className="fly-card__price-note">per person</span>
+                                    <span className="fly-card__price-note">{pkg.priceNote}</span>
                                 </div>
                                 <Button
                                     onClick={openBookingModal}
