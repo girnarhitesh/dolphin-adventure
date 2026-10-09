@@ -1,0 +1,51 @@
+export const galleryData = [
+  {
+    id: 1,
+    type: "image",
+    src: "https://images.unsplash.com/photo-1617945174127-e47d409e47c1?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Boat towing guests on an inflatable tube",
+    span: "large",
+  },
+  {
+    id: 2,
+    type: "image",
+    src: "https://images.unsplash.com/photo-1771774556027-67e056b76d99?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Family riding a pedal boat on the lake",
+    span: "medium",
+  },
+  {
+    id: 3,
+    type: "image",
+    src: "https://images.unsplash.com/photo-1755865984882-72738b754c39?q=80&w=1974&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Banana boats and a jet ski in clear water",
+    span: "wide",
+  },
+  {
+    id: 4,
+    type: "image",
+    src: "https://images.unsplash.com/photo-1649291390039-3d5640328a5a?q=80&w=3132&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Rider on a jet ski",
+    span: "medium",
+  },
+  {
+    id: 5,
+    type: "image",
+    src: "https://images.unsplash.com/photo-1621932945904-c5be9be992d8?q=80&w=1065&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Speedboat with guests on the lake",
+    span: "wide",
+  },
+  {
+    id: 6,
+    type: "image",
+    src: "https://images.unsplash.com/photo-1560419656-c2fe828696af?q=80&w=1064&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Parasailing over the ocean",
+    span: "wide",
+  },
+  {
+    id: 7,
+    type: "image",
+    src: "https://images.unsplash.com/photo-1772460358605-3c77c7d25347?q=80&w=2070&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    alt: "Quad bikes on a sandy beach",
+    span: "wide",
+  },
+];

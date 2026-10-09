@@ -1,0 +1,101 @@
+/* ============================================
+   REUSABLE BUTTON — Button.css
+   Uses global variables from index.css
+   ============================================ */
+
+.wnf-btn {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  padding: 16px 40px;
+  background: var(--primary);
+  color: var(--white);
+  border: none;
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 700;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  text-decoration: none;
+  cursor: pointer;
+  transition: all var(--transition-fast);
+  overflow: visible;
+  line-height: 1;
+}
+
+/* ── Side Accent Bars ───────────────────────── */
+.wnf-btn::before,
+.wnf-btn::after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 3px;
+  height: 70%;
+  background: var(--secondary);
+  transition: all var(--transition-fast);
+  opacity: 0.8;
+}
+
+.wnf-btn::before {
+  left: 0;
+}
+
+.wnf-btn::after {
+  right: 0;
+}
+
+/* ── Hover Effects ─────────────────────────── */
+.wnf-btn:hover {
+  background: var(--primary-dark);
+  color: var(--white);
+  box-shadow: 0 10px 25px rgba(19, 64, 112, 0.3);
+}
+
+.wnf-btn:hover::before,
+.wnf-btn:hover::after {
+  height: 100%;
+  opacity: 1;
+  background: var(--secondary);
+  box-shadow: 0 0 10px rgba(241, 153, 34, 0.6);
+}
+
+.wnf-btn:active {
+  transform: scale(0.98);
+}
+
+/* ── Primary Variant ───────────────────────── */
+.wnf-btn--primary {
+  background: var(--primary);
+  border: 1px solid var(--primary);
+}
+
+/* ── Outline Variant ────────────────────────── */
+.wnf-btn--outline {
+  background: rgba(19, 64, 112, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+}
+
+.wnf-btn--outline:hover {
+  background: var(--primary);
+  border-color: var(--primary);
+}
+
+/* ── Icon styling ───────────────────────────── */
+.wnf-btn__icon {
+  display: flex;
+  align-items: center;
+  margin-top: -1px;
+}
+
+/* ── Responsive Scaling ─────────────────────── */
+@media (max-width: 768px) {
+  .wnf-btn {
+    padding: 14px 30px;
+    font-size: 13px;
+  }
+}

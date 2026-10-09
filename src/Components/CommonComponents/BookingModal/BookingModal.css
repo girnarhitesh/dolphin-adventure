@@ -1,0 +1,132 @@
+.booking-modal-overlay {
+    position: fixed;
+    inset: 0;
+    z-index: 9999;
+    background: rgba(3, 10, 22, 0.7);
+    backdrop-filter: blur(12px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+    animation: nfModalOverlayFade 0.4s ease-out;
+}
+
+.booking-modal-container {
+    position: relative;
+    width: 100%;
+    max-width: 1100px;
+    height: 90vh;
+    background: #ffffff;
+    border-radius: 24px;
+    overflow: hidden;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    animation: nfModalContainerScale 0.5s cubic-bezier(0.34, 1.56, 0.64, 1);
+}
+
+/* Animations */
+@keyframes nfModalOverlayFade {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+@keyframes nfModalContainerScale {
+    from { 
+        opacity: 0; 
+        transform: scale(0.9) translateY(20px); 
+    }
+    to { 
+        opacity: 1; 
+        transform: scale(1) translateY(0); 
+    }
+}
+
+/* Close Button */
+.booking-modal-close {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    background: rgba(255, 255, 255, 0.9);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+    transition: all 0.3s ease;
+    color: #1e293b;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.booking-modal-close:hover {
+    background: #ffffff;
+    transform: rotate(90deg) scale(1.1);
+    color: var(--primary);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+}
+
+/* Loader */
+.booking-modal-loader {
+    position: absolute;
+    inset: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background: #ffffff;
+    gap: 20px;
+    color: var(--primary);
+    font-weight: 500;
+    z-index: 5;
+}
+
+.loader-spinner {
+    width: 50px;
+    height: 50px;
+    border: 3px solid rgba(19, 64, 112, 0.1);
+    border-top: 3px solid var(--primary);
+    border-radius: 50%;
+    animation: nfSpinnerSpin 1s linear infinite;
+}
+
+@keyframes nfSpinnerSpin {
+    to { transform: rotate(360deg); }
+}
+
+/* Iframe */
+.booking-modal-iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+    transition: opacity 0.5s ease;
+}
+
+.booking-modal-iframe.hidden {
+    opacity: 0;
+}
+
+.booking-modal-iframe.visible {
+    opacity: 1;
+}
+
+/* Responsive Customization */
+@media (max-width: 768px) {
+    .booking-modal-overlay {
+        padding: 0;
+    }
+
+    .booking-modal-container {
+        height: 100svh;
+        border-radius: 0;
+    }
+
+    .booking-modal-close {
+        top: 10px;
+        right: 10px;
+        background: rgba(255, 255, 255, 0.95);
+    }
+}

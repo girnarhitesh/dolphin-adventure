@@ -1,0 +1,323 @@
+
+.about-section {
+    position: relative;
+    width: 100%;
+    background: #f8f9fb;
+    padding: 100px 0 110px;
+    overflow: hidden;
+}
+
+.about-section::before {
+    content: '';
+    position: absolute;
+    top: -5%;
+    right: -4%;
+    width: 55%;
+    height: 110%;
+    background-image: url('https://bucketlistt-web.s3.ap-south-1.amazonaws.com/uploads/images/WhyNotFlyParachuteImage.png');
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center right;
+    opacity: 0.09;
+    transform: perspective(900px) rotateY(-18deg) rotateX(6deg) scale(1.1);
+    transform-origin: right center;
+    pointer-events: none;
+    z-index: 0;
+    animation: bgParaFloat 10s ease-in-out infinite alternate;
+}
+
+@keyframes bgParaFloat {
+    from {
+        opacity: 0.07;
+        transform: perspective(900px) rotateY(-90deg) rotateX(6deg) scale(1.10) translateY(0);
+    }
+    to {
+        opacity: 0.09;
+        transform: perspective(900px) rotateY(-14deg) rotateX(4deg) scale(1.13) translateY(-18px);
+    }
+}
+
+/* ── GRID GALLERY ────────────────────────── */
+.about-gallery-masonry {
+    position: relative;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: 240px;
+    gap: 12px;
+    width: 100%;
+    z-index: 10;
+}
+
+.gallery-item {
+    border-radius: 12px;
+    overflow: hidden;
+    background: #e8eef3;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08);
+    transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+    /* Fill the grid cell fully */
+    display: flex;
+    flex-direction: column;
+}
+
+.gallery-item:hover {
+    transform: translateY(-5px) scale(1.02);
+    z-index: 20;
+}
+
+/* Portrait video: spans 2 rows on the left */
+.gallery-item--large {
+    grid-row: span 2;
+    /* height = 2 rows + gap */
+}
+
+/* Horizontal videos: span 2 columns on the right */
+.gallery-item--wide {
+    grid-column: span 2;
+}
+
+/* Antd Image Component Overrides */
+.gallery-item .ant-image {
+    width: 100%;
+    height: 100%;
+    display: block;
+    flex: 1;
+}
+
+.gallery-item img,
+.gallery-item .ant-image-img {
+    width: 100% !important;
+    height: 100% !important;
+    display: block !important;
+    object-fit: cover !important;
+}
+
+/* Video Styling */
+.gallery-video-wrapper {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    line-height: 0;
+    flex: 1;
+}
+
+.gallery-video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 0;
+}
+
+.video-overlay-tag {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background: rgba(19, 64, 112, 0.85);
+    color: white;
+    padding: 4px 10px;
+    border-radius: 6px;
+    font-size: 10px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 0.1em;
+    backdrop-filter: blur(4px);
+}
+
+
+/* Stat Badge (Inline in Text Container) */
+.about-gallery-stat-inline {
+    display: inline-flex;
+    align-items: center;
+    gap: 20px;
+    background: white;
+    padding: 18px 30px;
+    border-radius: 16px;
+    border: 1px solid rgba(19, 64, 112, 0.1);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.04);
+    margin: 25px 0;
+}
+
+.about-gallery__stat-circle {
+    width: 52px;
+    height: 52px;
+    background: var(--primary);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.about-gallery-stat-inline .about-gallery__stat-value {
+    color: var(--primary);
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 1;
+}
+
+.about-gallery-stat-inline .about-gallery__stat-plus {
+    color: var(--accent-secondary);
+    margin-left: 4px;
+    font-size: 28px;
+}
+
+.about-gallery-stat-inline .text-dark-mode-compat {
+    color: #4b5563;
+    font-size: 12px;
+    font-weight: 500;
+    letter-spacing: 0.05em;
+    margin-left: 12px;
+    text-transform: uppercase;
+    display: inline-block;
+    max-width: 180px;
+    line-height: 1.3;
+}
+
+/* ── BOTTOM CONTENT ────────────────────────── */
+.about-content-bottom {
+    position: relative;
+    z-index: 20;
+}
+
+.about-content-grid {
+    display: grid;
+    grid-template-columns: 1.5fr 1fr;
+    gap: 60px;
+    align-items: flex-start;
+}
+
+.about-eyebrow {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 16px;
+}
+
+.about-eyebrow__line {
+    width: 36px;
+    height: 2px;
+    background: var(--primary);
+}
+
+.about-eyebrow__text {
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 0.16em;
+    text-transform: uppercase;
+    color: var(--primary);
+}
+
+.about-heading--accent {
+    color: var(--primary);
+}
+
+.about-text-highlight {
+    color: var(--primary);
+    font-weight: 600;
+}
+
+.about-highlights {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.about-highlight-pill {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    padding: 8px 16px;
+    background: rgba(19, 64, 112, 0.05);
+    border: 1px solid rgba(19, 64, 112, 0.1);
+    border-radius: 999px;
+    font-size: 11px;
+    font-weight: 500;
+    color: var(--primary);
+}
+
+/* Counter Reel Animation Styling */
+.counter-reel {
+    display: inline-flex;
+    align-items: baseline;
+    height: 1.2em;
+    overflow: hidden;
+}
+
+.reel-container {
+    display: inline-block;
+    height: 1.2em;
+    overflow: hidden;
+    position: relative;
+    width: 0.65em; /* Fixed width for alignment */
+}
+
+.reel-column {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    transition: transform 2s cubic-bezier(0.12, 0, 0.39, 0);
+    will-change: transform;
+}
+
+.reel-num {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 1.2em;
+    width: 100%;
+}
+
+.reel-symbol {
+    display: flex;
+    align-items: center;
+    height: 1.2em;
+}
+
+.about-gallery__stat-label {
+    font-size: 10px;
+    text-transform: uppercase;
+    margin-top: 2px;
+}
+
+/* ── RESPONSIVE ────────────────────────────── */
+@media (max-width: 1200px) {
+    .about-gallery-masonry {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 900px) {
+    .about-gallery-masonry {
+        grid-template-columns: repeat(2, 1fr);
+    }
+    .gallery-item--wide {
+        grid-column: span 2;
+    }
+    .about-content-grid {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+}
+
+@media (max-width: 640px) {
+    .about-gallery-masonry {
+        grid-template-columns: 1fr 1fr;
+            grid-auto-rows: unset;
+    }
+    .gallery-item--large,
+    .gallery-item--wide {
+        grid-column: 1;
+        grid-row: auto;
+    }
+    .about-section {
+        padding: 60px 0 80px;
+    }
+    .about-gallery-stat-inline {
+        margin-top: 20px;
+        justify-content: center;
+        width: 100%;
+    }
+}

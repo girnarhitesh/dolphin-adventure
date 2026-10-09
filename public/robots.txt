@@ -1,4 +1,5 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://dolphin-adventure.vercel.app/sitemap.xml
+# Sitemap URL
+Sitemap: https://whynotfly.in/sitemap.xml

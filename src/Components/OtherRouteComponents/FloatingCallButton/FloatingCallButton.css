@@ -1,0 +1,87 @@
+.floating-call-btn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    width: 60px;
+    height: 60px;
+    background: linear-gradient(135deg, var(--primary) 0%, var(--accent-secondary) 100%);
+    color: white;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 999;
+    cursor: pointer;
+    text-decoration: none;
+    box-shadow: 0 4px 15px rgba(241, 153, 34, 0.3);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+
+.floating-call-btn:hover {
+    transform: scale(1.1);
+    background: linear-gradient(135deg, var(--primary-light) 0%, var(--accent-secondary) 100%);
+    box-shadow: 0 8px 25px rgba(241, 153, 34, 0.5);
+}
+
+.icon-layer {
+    position: relative;
+    z-index: 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* ── Pulsing Animation ── */
+.pulse-layer {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: var(--accent-secondary);
+    border-radius: 50%;
+    z-index: 1;
+    opacity: 0.6;
+    animation: btnPulse 2s infinite ease-out;
+}
+
+@keyframes btnPulse {
+    0% {
+        transform: scale(1);
+        opacity: 0.6;
+    }
+    100% {
+        transform: scale(1.8);
+        opacity: 0;
+    }
+}
+
+/* ── Mobile Optimization ── */
+@media (max-width: 768px) {
+    .floating-call-btn {
+        bottom: 20px;
+        right: 20px;
+        width: 50px;
+        height: 50px;
+    }
+}
+
+/* Slick entrance animation */
+@keyframes fabEntrance {
+    from {
+        opacity: 0;
+        transform: scale(0.5) translateY(40px);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1) translateY(0);
+    }
+}
+
+.floating-call-btn {
+    animation: fabEntrance 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards,
+               entrancePulse 2s infinite ease-out 0.8s; /* Start pulse after entrance */
+}
+
+/* Combine animations logic: 
+   The component has a separate .pulse-layer for the continuous pulse 
+   so we don't need to double up on the main button's keyframes if we don't want to.
+*/

@@ -1,0 +1,114 @@
+/* ============================================
+   NAVIGATION — Navigation.css
+   Professional, Sticky, Glassmorphic Navigation
+   ============================================ */
+
+.nav-header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    transition: all 0.4s cubic-bezier(0.165, 0.84, 0.44, 1);
+    padding: 24px 0;
+    background: transparent;
+}
+
+/* ── Container Logic ── */
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    transition: all 0.4s ease;
+}
+
+/* ── Scrolled State ── */
+.nav-header--scrolled {
+    /* padding: 12px 0; */
+    background: rgba(255, 255, 255, 0.8);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.05);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+/* ── Hidden State (Hide on scroll down) ── */
+.nav-header--hidden {
+    transform: translateY(-100%);
+}
+
+/* ── Logo Styling ── */
+.nav-logo {
+    display: flex;
+    align-items: center;
+    height: 72px;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.nav-logo:hover {
+    transform: scale(1.02);
+}
+
+.nav-logo__img {
+    height: 72px;
+    width: auto;
+    object-fit: contain;
+}
+
+/* ── Button Adjustments ── */
+.nav-book-btn {
+    padding: 12px 28px !important;
+    /* Overriding default large padding for compact nav */
+    font-size: 13px !important;
+    transition: all 0.3s cubic-bezier(0.23, 1, 0.32, 1) !important;
+}
+
+/* Specific styling for nav button when not scrolled (outline/ghost look) */
+.nav-header:not(.nav-header--scrolled) .nav-book-btn {
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    backdrop-filter: blur(4px);
+}
+
+.nav-header:not(.nav-header--scrolled) .nav-book-btn:hover {
+    background: var(--white);
+    color: var(--primary);
+    border-color: var(--white);
+}
+
+/* ── Mobile Optimization ── */
+@media (max-width: 768px) {
+
+
+    .nav-logo {
+        height: 56px;
+    }
+
+    .nav-logo__img {
+        height: 56px;
+    }
+
+    .nav-book-btn {
+        padding: 10px 20px !important;
+        font-size: 12px !important;
+    }
+
+}
+
+/* Slick entrance animation */
+@keyframes navFadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.nav-header {
+    animation: navFadeIn 0.8s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}

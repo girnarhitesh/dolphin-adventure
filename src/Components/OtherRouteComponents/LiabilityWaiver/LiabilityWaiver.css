@@ -1,0 +1,181 @@
+/* ============================================
+   LIABILITY WAIVER — LiabilityWaiver.css
+   ============================================ */
+
+.waiver-page {
+    background-color: #f8fafc;
+    min-height: 100vh;
+}
+
+/* ── Hero Section ── */
+.waiver-hero {
+    position: relative;
+    padding: 160px 0 100px;
+    background-image: url('/public/PrivaryPoliicyBackgroundImage.jpeg');
+    background-size: cover;
+    background-position: center;
+    color: white;
+    text-align: center;
+}
+
+.waiver-hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, rgba(19, 64, 112, 0.9), rgba(19, 64, 112, 0.7));
+    z-index: 1;
+}
+
+.waiver-hero .wnf-container {
+    position: relative;
+    z-index: 2;
+}
+
+.waiver-hero h1 {
+    font-size: clamp(40px, 5vw, 64px);
+    margin-bottom: 10px;
+    color: white;
+}
+
+.last-updated {
+    font-size: 14px;
+    opacity: 0.8;
+    color: white;
+}
+
+/* ── Content Section ── */
+.waiver-content-section {
+    padding: 80px 0;
+    margin-top: -60px; /* Pull up into hero */
+    position: relative;
+    z-index: 5;
+}
+
+.waiver-card {
+    background: white;
+    border-radius: var(--radius-md);
+    padding: 60px;
+    box-shadow: 0 20px 50px rgba(0, 0, 0, 0.05);
+}
+
+.waiver-intro {
+    font-size: 18px;
+    line-height: 1.6;
+    color: #4b5563;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #e5e7eb;
+}
+
+.waiver-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px 40px;
+}
+
+.waiver-section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.section-header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-bottom: 5px;
+}
+
+.section-num {
+    font-family: var(--font-display);
+    font-size: 24px;
+    color: var(--accent-secondary);
+    opacity: 0.5;
+}
+
+.waiver-section h2 {
+    font-size: 24px;
+    margin: 0;
+    color: var(--primary);
+}
+
+.waiver-section p, .waiver-section li {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #374151;
+}
+
+.waiver-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.waiver-list li {
+    position: relative;
+    padding-left: 20px;
+}
+
+.waiver-list li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 10px;
+    width: 6px;
+    height: 6px;
+    background: var(--accent-secondary);
+    border-radius: 50%;
+}
+
+.waiver-acknowledgment {
+    font-style: italic;
+    font-weight: 500;
+    color: #4b5563;
+    background: #f8fafc;
+    padding: 24px;
+    border-left: 4px solid var(--accent-secondary);
+    border-radius: var(--radius-sm);
+}
+
+.waiver-contact-cta {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid #e5e7eb;
+    text-align: center;
+}
+
+.waiver-contact-cta p {
+    font-size: 16px;
+    color: #6b7280;
+    margin-bottom: 20px;
+}
+
+/* ── Responsive ── */
+@media (max-width: 992px) {
+    .waiver-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .waiver-card {
+        padding: 40px;
+    }
+}
+
+@media (max-width: 768px) {
+    .waiver-hero {
+        padding: 120px 0 80px;
+    }
+    
+    .waiver-content-section {
+        padding: 40px 0;
+    }
+    
+    .waiver-card {
+        padding: 30px 20px;
+    }
+}

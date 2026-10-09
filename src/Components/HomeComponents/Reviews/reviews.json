@@ -1,0 +1,75 @@
+[
+  {
+    "id": 1,
+    "name": "Uttam Sahu",
+    "review": "Had a wonderful experience at the Place. The camps were clean, well-maintained, and very comfortable. Staff behavior was polite and supportive throughout the stay. Highly recommended for both family and business trips.",
+    "city": "Beyt Dwarka",
+    "rating": 5,
+    "initials": "US"
+  },
+  {
+    "id": 2,
+    "name": "Lena Blokhina",
+    "review": "My Favorite camp in Bet Dwarca. Amazing beach, sunrise and sander point. Good food, Fire and dance at the evening. I really very enjoy in this Camp. Very safety area. Weter activities, scuba, banan, dolphin adventure - I highly recommend it",
+    "city": "Beyt Dwarka",
+    "rating": 5,
+    "initials": "LB"
+  },
+  {
+    "id": 3,
+    "name": "Hemangi Kotak",
+    "review": "We really enjoyed our stay: the surrounding environment was peaceful with a private, neat and clean beach. The staff were always polite and helpful. The food is a normal Gujarati menu. Special thanks to Vanraj Bhai, who was very helpful and caring throughout our stay and made our experience even more...",
+    "city": "Beyt Dwarka",
+    "rating": 5,
+    "initials": "HK"
+  },
+  {
+    "id": 4,
+    "name": "Anbu arasan",
+    "review": "We really enjoyed our stay: the surrounding environment was peaceful with private neat clean beach, the staffs were always polite and helpful. Food is normal gujarati menu. The adventure activities were a hit with everyone specially dolphin safari along with speed boat. One suggestion is to improve the water facility...",
+    "city": "Beyt Dwarka",
+    "rating": 5,
+    "initials": "AA"
+  },
+  {
+    "id": 5,
+    "name": "Amit Chandravadiya",
+    "review": "Perfect place of beach enjoyment, beach rides, camping, sunset, fresh air etc ...for everyone and especially watch dolphin live",
+    "city": "Beyt Dwarka",
+    "rating": 5,
+    "initials": "AC"
+  },
+  {
+    "id": 6,
+    "name": "Mayur Prajapati",
+    "review": "We visited the Dolphin Adventure Camp Site a few months ago with the staff of Baroda High School through NEEDS, and it was truly an unforgettable experience. The dolphin adventure was absolutely amazing — seeing dolphins so closely was a magical moment...",
+    "city": "Beyt Dwarka",
+    "rating": 5,
+    "initials": "MP"
+  },
+  {
+    "id": 7,
+    "name": "Gira Rathod",
+    "review": "Good place to wander around and enjoy the calmness of the clean blue beach. There are staying options in the tents and many adventure rides too. It is a private beach and anyone can visit during day time with nominal entry fees.",
+    "city": "Beyt Dwarka",
+    "rating": 5,
+    "initials": "GR"
+  },
+  {
+    "id": 8,
+    "name": "Jay Bhanderi",
+    "review": "Most beautiful campsite in Beyt Dwarka over the beach. Accommodation and food are good. Playing & seating areas, and all other services are appreciated! Most suitable for the family camping...!",
+    "city": "Beyt Dwarka",
+    "rating": 5,
+    "initials": "JB"
+  },
+  {
+    "id": 9,
+    "name": "Jenil Shah",
+    "review": "We have visited first time Dwarka on 15th February 2025. We have two day accommodation with Dolphine Adventure camp. All over experience is too Good. All staff over here is too cooperative and friendly. Food part is also delicious.",
+    "city": "Beyt Dwarka",
+    "rating": 5,
+    "initials": "JS",
+    "date": "15 Feb 2025"
+  }
+]
