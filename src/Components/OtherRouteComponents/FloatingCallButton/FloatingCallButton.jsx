@@ -3,7 +3,7 @@ import "./FloatingCallButton.css";
 import { MdPhone } from "react-icons/md";
 
 const FloatingCallButton = () => {
-    const phoneNumber = "+916397997489";
+    const phoneNumber = "+917201060500";
 
     return (
         <a 

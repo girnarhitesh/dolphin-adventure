@@ -99,9 +99,9 @@ const TermsAndConditions = () => {
                                     <h2>Contact Us</h2>
                                 </div>
                                 <div className="terms-contact-info">
-                                    <p>📍 <strong>Address:</strong> Beyt Dwarka, Gujarat, India</p>
-                                    <p>📞 <strong>Phone:</strong> +91 97608 23669</p>
-                                    <p>📧 <strong>Email:</strong> info@whynotfly.com</p>
+                                    <p>📍 <strong>Address:</strong> Beyt Dwarka, Gujarat</p>
+                                    <p>📞 <strong>Phone:</strong> +91 7201060500</p>
+                                    <p>📧 <strong>Email:</strong> info@beytdwarka.com</p>
                                 </div>
                             </div>
                         </div>
@@ -109,7 +109,7 @@ const TermsAndConditions = () => {
                         <div className="terms-contact-cta MarginTop30px">
                             <p>Need clarification on our terms? Our team is ready to assist.</p>
                             <Button
-                                href="tel:+916397997489"
+                                href="tel:+917201060500"
                                 icon={<FaPhone />}
                             >
                                 Contact Support

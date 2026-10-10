@@ -63,7 +63,7 @@ const Reviews = () => {
                     </div> */}
 
                     <div>
-                        <Button href="tel:+916397997489" variant="primary">
+                        <Button href="tel:+917201060500" variant="primary">
                         <MdPhone size={16} />
                         Call Now
                     </Button>   
