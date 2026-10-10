@@ -1,18 +1,7 @@
 import React from "react";
-import { FaFire } from "react-icons/fa";
-import { GiCampingTent, GiHut, GiMeal } from "react-icons/gi";
-import { MdVerifiedUser } from "react-icons/md";
 import Button from "../../../CommonComponents/Button/Button";
 import "./HeroSliderAnimation.css";
 import { useBooking } from "../../../Context/BookingContext";
-
-const highlights = [
-    { icon: GiCampingTent, lines: ["Well Equipped", "Campsite"] },
-    { icon: FaFire, lines: ["Bonfire", "Night"], accent: true },
-    { icon: GiMeal, lines: ["Delicious", "Food"] },
-    { icon: GiHut, lines: ["Beach View", "Huts"], accent: true },
-    { icon: MdVerifiedUser, lines: ["Safe & Secure", "Environment"] },
-];
 
 const slides = [
     {
@@ -112,25 +101,6 @@ const HeroSliderAnimation = () => {
                                 Explore Packages
                             </Button> */}
                         </div>
-
-                        <ul className="hero-highlights" aria-label="What we provide">
-                            {highlights.map((item, index) => {
-                                const Icon = item.icon;
-                                return (
-                                    <li key={item.lines.join("-")} className="hero-highlight">
-                                        {index > 0 && <span className="hero-highlight__divider" aria-hidden="true" />}
-                                        <span className={`hero-highlight__icon${item.accent ? " hero-highlight__icon--accent" : ""}`}>
-                                            <Icon size={16} />
-                                        </span>
-                                        <span className="hero-highlight__label">
-                                            {item.lines[0]}
-                                            <br />
-                                            {item.lines[1]}
-                                        </span>
-                                    </li>
-                                );
-                            })}
-                        </ul>
                     </div>
                 </div>
 

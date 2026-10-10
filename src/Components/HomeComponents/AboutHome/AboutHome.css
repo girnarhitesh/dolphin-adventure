@@ -339,16 +339,32 @@
     }
 }
 
+.about-gallery-masonry > .ant-image-preview-group {
+    display: contents;
+}
+
 @media (max-width: 640px) {
     .about-gallery-masonry {
         grid-template-columns: 1fr 1fr;
-        grid-auto-rows: unset;
+        grid-auto-rows: auto;
+        gap: 8px;
+    }
+
+    .gallery-item {
+        aspect-ratio: 1;
+        min-height: 0;
     }
 
     .gallery-item--large,
-    .gallery-item--wide {
-        grid-column: 1;
+    .gallery-item--wide,
+    .gallery-item--medium {
+        grid-column: auto;
         grid-row: auto;
+    }
+
+    .gallery-item:first-child {
+        grid-column: 1 / -1;
+        aspect-ratio: 16 / 10;
     }
 
     .about-section {
