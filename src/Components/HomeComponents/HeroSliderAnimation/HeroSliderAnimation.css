@@ -114,7 +114,7 @@
   align-items: flex-end;
   min-width: 0;
   max-width: 100%;
-  padding-bottom: 9%;
+  padding-bottom: 120px;
   pointer-events: auto;
   /* Re-enable pointer events for buttons */
 }
@@ -269,41 +269,43 @@
 
 /* ── Highlight strip ────────────────────────── */
 .hero-highlights {
-  display: flex;
-  align-items: stretch;
-  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, max-content);
+  align-items: center;
+  width: fit-content;
   max-width: 100%;
   margin: 0;
-  padding: 6px 2px;
+  padding: 8px 6px;
   list-style: none;
   background: rgba(255, 255, 255, 0.96);
-  border-radius: 16px;
+  border-radius: 22px;
   box-shadow: 0 12px 28px rgba(var(--primary-rgb), 0.18);
+  overflow-x: auto;
 }
 
 .hero-highlight {
   position: relative;
   display: flex;
   align-items: center;
-  flex: 1 1 0;
+  justify-content: flex-start;
+  gap: 8px;
   min-width: 0;
-  gap: 6px;
-  padding: 4px 8px;
+  padding: 6px 16px;
 }
 
 .hero-highlight__divider {
   position: absolute;
   left: 0;
-  top: 6px;
-  bottom: 6px;
+  top: 8px;
+  bottom: 8px;
   width: 1px;
-  background: rgba(var(--primary-rgb), 0.14);
+  background: rgba(var(--primary-rgb), 0.16);
 }
 
 .hero-highlight__icon {
-  width: 28px;
-  height: 28px;
-  border-radius: 8px;
+  width: 34px;
+  height: 34px;
+  border-radius: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -319,7 +321,7 @@
 
 .hero-highlight__label {
   font-family: var(--font-body);
-  font-size: 9px;
+  font-size: 10px;
   font-weight: 700;
   line-height: 1.25;
   letter-spacing: 0.04em;
@@ -635,7 +637,7 @@
 /* ── Scroll hint ────────────────────────────── */
 .hero-scroll-hint {
   position: absolute;
-  bottom: 40px;
+  bottom: 16px;
   left: 50%;
   transform: translateX(-50%);
   z-index: var(--hero-z-ui);
@@ -643,6 +645,7 @@
   flex-direction: column;
   align-items: center;
   gap: 8px;
+  pointer-events: none;
 }
 
 .hero-scroll-hint span {

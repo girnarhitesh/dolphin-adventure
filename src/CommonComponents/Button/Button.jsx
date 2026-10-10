@@ -2,7 +2,7 @@ import React from "react";
 import "./Button.css";
 import { Link } from "react-router-dom";
 /**
- * Reusable Button Component for WhyNotFly
+ * Reusable Button Component for Dolphin Adventure
  * @param {Object} props
  * @param {React.ReactNode} props.children - Button text or elements
  * @param {string} props.variant - 'primary', 'outline', 'ghost'

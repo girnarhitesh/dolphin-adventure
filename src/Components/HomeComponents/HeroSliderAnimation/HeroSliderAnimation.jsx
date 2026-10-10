@@ -120,7 +120,7 @@ const HeroSliderAnimation = () => {
                                     <li key={item.lines.join("-")} className="hero-highlight">
                                         {index > 0 && <span className="hero-highlight__divider" aria-hidden="true" />}
                                         <span className={`hero-highlight__icon${item.accent ? " hero-highlight__icon--accent" : ""}`}>
-                                            <Icon size={16} />
+                                            <Icon size={18} />
                                         </span>
                                         <span className="hero-highlight__label">
                                             {item.lines[0]}
