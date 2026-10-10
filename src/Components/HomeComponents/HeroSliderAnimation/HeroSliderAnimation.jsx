@@ -18,7 +18,7 @@ const slides = [
     {
         id: 1,
         image:
-            "https://images.unsplash.com/photo-1592208128295-5aaa34f1d72b?q=80&w=2670&auto=format&fit=crop",
+            "/Images/policy-hero.jpg",
         location: "Beyt Dwarka, Gujarat",
         eyebrow: "Dolphin Adventure",
         tagline: "Fun, Adventure &\nLasting Memories",
@@ -120,7 +120,7 @@ const HeroSliderAnimation = () => {
                                     <li key={item.lines.join("-")} className="hero-highlight">
                                         {index > 0 && <span className="hero-highlight__divider" aria-hidden="true" />}
                                         <span className={`hero-highlight__icon${item.accent ? " hero-highlight__icon--accent" : ""}`}>
-                                            <Icon size={18} />
+                                            <Icon size={16} />
                                         </span>
                                         <span className="hero-highlight__label">
                                             {item.lines[0]}

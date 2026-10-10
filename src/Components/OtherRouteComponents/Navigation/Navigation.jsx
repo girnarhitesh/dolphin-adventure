@@ -14,8 +14,8 @@ const Navigation = () => {
         const handleScroll = () => {
             const currentY = window.scrollY;
 
-            // Mark as scrolled after 20px for glass effect
-            setScrolled(currentY > 20);
+            // Shrink the bar after 200px of scroll
+            setScrolled(currentY > 200);
 
             // Hide on scroll down, show on scroll up (min 80px from top)
             if (currentY > 80) {

@@ -25,16 +25,7 @@ const Footer = () => {
                             <img src="/Images/dolphin-adventure-logo.png" alt="Dolphin Adventure" className="footer-logo-img" />
                         </div>
                         <p>
-                            Beyt Dwarka's only campsite with on-site{" "}
-                            <a
-                                href="https://www.bucketlistt.com/"
-                                target="_blank"
-                                rel="noopener noreferrer"
-                                className="footer-content-link"
-                            >
-                                water sports
-                            </a>
-                            .
+                            Beyt Dwarka's only campsite with water sports on the beach.
                         </p>
                         <div className="footer-contact">
                             <a href="tel:+917201060500" className="contact-item">
@@ -45,19 +36,15 @@ const Footer = () => {
                                 <MdEmail size={18} />
                                 <span>info@beytdwarka.com</span>
                             </a>
-                            <div className="contact-item">
-                                <MdLocationOn size={18} />
-                                <span>Beyt Dwarka, Gujarat</span>
-                            </div>
                         </div>
                         <div className="footer-social">
                             <a href="https://www.facebook.com/ajay.kateshiya.manu247" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
                                 <FaFacebookF size={16} />
                             </a>
-                            <a href="https://www.instagram.com/beytdwarka_tourism" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
+                            <a href="https://www.instagram.com/beytdwarka_tourism?igsh=b3NyNHQ2dnRnYWhr" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
                                 <FaInstagram size={16} />
                             </a>
-                            <a href="https://wa.me/917201060500" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="WhatsApp">
+                            <a href="https://api.whatsapp.com/send/?phone=917201060500&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="WhatsApp">
                                 <FaWhatsapp size={16} />
                             </a>
                         </div>

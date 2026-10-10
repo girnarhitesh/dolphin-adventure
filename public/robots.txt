@@ -1,5 +1,4 @@
 User-agent: *
 Allow: /
 
-# Sitemap URL
-Sitemap: https://whynotfly.in/sitemap.xml
+Sitemap: https://beytdwarka.com/sitemap.xml

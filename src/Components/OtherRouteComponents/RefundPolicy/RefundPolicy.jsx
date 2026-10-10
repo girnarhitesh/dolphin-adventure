@@ -91,7 +91,7 @@ const RefundPolicy = () => {
                                 <ul className="refund-list">
                                     <li><strong>Phone:</strong> <a href="tel:+917201060500">+91 7201060500</a></li>
                                     <li><strong>Email:</strong> <a href="mailto:info@beytdwarka.com">info@beytdwarka.com</a></li>
-                                    <li><strong>Address:</strong> Dolphin Adventure, Beyt Dwarka, Gujarat</li>
+                                    <li><strong>Address:</strong> Dolphin Adventure, Beyt Dwarka, Gujarat, India</li>
                                 </ul>
                             </div>
                         </div>

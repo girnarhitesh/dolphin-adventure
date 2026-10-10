@@ -1,0 +1,17 @@
+{
+  "name": "Dolphin Adventure",
+  "short_name": "Dolphin Adventure",
+  "description": "Beach camping and water sports at Beyt Dwarka.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#134070",
+  "icons": [
+    {
+      "src": "/Images/dolphin-adventure-logo.png",
+      "type": "image/png",
+      "purpose": "any"
+    }
+  ]
+}
