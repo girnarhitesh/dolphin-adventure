@@ -39,6 +39,7 @@ const Reviews = () => {
                         Campers Who Chose<br />
                         <span className="reviews-heading--accent">The Beach Life!</span>
                     </h2>
+                    <br />
 
                     <p className="reviews-desc">
                         Beyt Dwarka is not just a getaway, it's a blend of sea, sand and pure joy. Families, school groups and corporate teams come from across Gujarat and India to stay on our private beach, and their stories speak for themselves. Whether it's a first ride on the banana boat, a bonfire night under the stars or seeing dolphins up close on the boat ride, every stay with us turns into a memory worth sharing.
