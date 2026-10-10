@@ -20,7 +20,7 @@ const NotFound = () => {
                     <span className="not-found__digit">4</span>
                     <div className="not-found__glider-box">
                         <img
-                            src="/Images/dolphine-png.png"
+                            src="/Images/dolphinImage.png"
                             alt="Dolphin"
                             className="not-found__glider"
                         />
@@ -33,22 +33,22 @@ const NotFound = () => {
                 <div className="not-found__content">
                     <div className="not-found__eyebrow">
                         <span className="not-found__eyebrow-line" />
-                        <span className="not-found__eyebrow-text">Wrong Heading?</span>
+                        <span className="not-found__eyebrow-text">Wrong Turn?</span>
                     </div>
 
                     <h1 className="not-found__title">
-                        Lost in the <span className="not-found__title--accent">Infinite Clouds</span>
+                        Lost along the <span className="not-found__title--accent">Shore</span>
                     </h1>
 
                     <p className="not-found__desc">
-                        The altitude is high, but the page you're looking for seems to have
-                        drifted off course. Let's get you back to the safe zone.
+                        The page you're looking for has drifted away with the tide.
+                        Let's get you back to the beach.
                     </p>
 
                     <div className="not-found__cta">
                         <Button to="/" variant="outline">
                             <MdWest size={18} />
-                            Fly Back Home
+                            Back to the Beach
                         </Button>
                         <Button onClick={openBookingModal} variant="primary">
                             Book Your Splash

@@ -87,24 +87,6 @@ const CounterReel = ({ value }) => {
     );
 };
 
-const highlightPhotos = galleryData.map(
-    (item) => `${item.src.split("?")[0]}?auto=format&fit=crop&w=120&h=120&q=60`
-);
-
-const highlights = [
-    "Only Campsite with Water Sports",
-    "Private Beach Camping",
-    "Dolphin Exploration",
-    "Stunning Sunset Views",
-    "Bonfire & Garba Nights",
-    "Safe & Secure Environment",
-].map((label, index) => ({
-    label,
-    images: [0, 1, 2].map(
-        (offset) => highlightPhotos[(index + offset) % highlightPhotos.length]
-    ),
-}));
-
 const AboutHome = () => {
     const { openBookingModal } = useBooking();
 
@@ -191,17 +173,14 @@ const AboutHome = () => {
                         <div className="about-highlights-wrapper">
                             {/* Highlight pills */}
                             <ul className="about-highlights MarginBottom30px" aria-label="Key highlights">
-                                {highlights.map((item) => (
-                                    <li key={item.label} className="about-highlight-pill">
-                                        <span className="about-highlight-pill__photos" aria-hidden="true">
-                                            {item.images.map((src) => (
-                                                <img key={src} src={src} alt="" />
-                                            ))}
-                                        </span>
-                                        <MdVerified size={14} />
-                                        {item.label}
-                                    </li>
-                                ))}
+                                {["Only Campsite with Water Sports", "Private Beach Camping", "Dolphin Exploration", "Stunning Sunset Views", "Bonfire & Garba Nights", "Safe & Secure Environment"].map(
+                                    (item) => (
+                                        <li key={item} className="about-highlight-pill">
+                                            <MdVerified size={14} />
+                                            {item}
+                                        </li>
+                                    )
+                                )}
                             </ul>
 
                             {/* CTA */}

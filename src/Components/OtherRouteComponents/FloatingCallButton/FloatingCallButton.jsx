@@ -9,7 +9,7 @@ const FloatingCallButton = () => {
         <a 
             href={`tel:${phoneNumber}`} 
             className="floating-call-btn" 
-            aria-label="Call WhyNotFly"
+            aria-label="Call Dolphin Adventure"
             title="Call Us"
         >
             <div className="pulse-layer"></div>

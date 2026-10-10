@@ -8,7 +8,7 @@ import {
 import {
     FaFacebookF,
     FaInstagram,
-    FaWhatsapp
+    FaYoutube
 } from "react-icons/fa";
 import { Link } from "react-router-dom";
 import "./Footer.css";
@@ -25,36 +25,36 @@ const Footer = () => {
                             <img src="/Images/dolphin-adventure-logo.png" alt="Dolphin Adventure" className="footer-logo-img" />
                         </div>
                         <p>
-                            Beyt Dwarka's first and only authorized{" "}
+                            Beyt Dwarka's only campsite with on-site{" "}
                             <a
                                 href="https://www.bucketlistt.com/"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="footer-content-link"
                             >
-                                paragliding
-                            </a>{" "}
-                            destination.
+                                water sports
+                            </a>
+                            .
                         </p>
                         <div className="footer-contact">
-                            <a href="tel:+917201060500" className="contact-item">
+                            <a href="tel:+916397997489" className="contact-item">
                                 <MdPhone size={18} />
-                                <span>+91 7201060500</span>
+                                <span>+91 63979 97489</span>
                             </a>
-                            <a href="mailto:info@beytdwarka.com" className="contact-item">
+                            <a href="mailto:info@whynotfly.com" className="contact-item">
                                 <MdEmail size={18} />
-                                <span>info@beytdwarka.com</span>
+                                <span>info@whynotfly.com</span>
                             </a>
                         </div>
                         <div className="footer-social">
-                            <a href="https://www.facebook.com/ajay.kateshiya.manu247" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
+                            <a href="https://www.facebook.com/people/Why-Not-Fly/61572874630150/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Facebook">
                                 <FaFacebookF size={16} />
                             </a>
-                            <a href="https://www.instagram.com/beytdwarka_tourism?igsh=b3NyNHQ2dnRnYWhr" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
+                            <a href="https://www.instagram.com/whynotfly.in/" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="Instagram">
                                 <FaInstagram size={16} />
                             </a>
-                            <a href="https://api.whatsapp.com/send/?phone=917201060500&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="WhatsApp">
-                                <FaWhatsapp size={16} />
+                            <a href="https://www.youtube.com/@WhyNotFly_Rishikesh" target="_blank" rel="noopener noreferrer" className="social-link" aria-label="YouTube">
+                                <FaYoutube size={16} />
                             </a>
                         </div>
                     </div>
@@ -85,7 +85,7 @@ const Footer = () => {
                 {/* Footer Bottom */}
                 <div className="footer-bottom">
                     <div className="footer-bottom-left">
-                        <span className="copyright">Copyright © {currentYear} <strong>WhyNotFly</strong>. All Rights Reserved.</span>
+                        <span className="copyright">Copyright © {currentYear} <strong>Dolphin Adventure</strong>. All Rights Reserved.</span>
                         <div className="powered-by">
                             <span>| Powered by</span>
                             <a href="https://okghumo.in" target="_blank" rel="noopener noreferrer">

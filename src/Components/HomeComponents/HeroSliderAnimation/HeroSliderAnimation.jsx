@@ -18,7 +18,7 @@ const slides = [
     {
         id: 1,
         image:
-            "/Images/policy-hero.jpg",
+            "https://images.unsplash.com/photo-1592208128295-5aaa34f1d72b?q=80&w=2670&auto=format&fit=crop",
         location: "Beyt Dwarka, Gujarat",
         eyebrow: "Dolphin Adventure",
         tagline: "Fun, Adventure &\nLasting Memories",

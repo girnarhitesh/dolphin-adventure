@@ -43,7 +43,6 @@
   --sans: var(--font-body);
   --heading: var(--font-display);
   --mono: var(--font-mono);
-  --section-heading-size: clamp(26px, 2.5vw, 40px);
 
   font: 18px/145% var(--sans);
   letter-spacing: 0.18px;
@@ -162,7 +161,7 @@ h1 {
 }
 
 h2 {
-  font-size: var(--section-heading-size);
+  font-size: clamp(28.8px, 2.97vw, 46.8px);
   font-weight: 400;
   line-height: 1.05;
   letter-spacing: 0.03em;

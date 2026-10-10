@@ -227,7 +227,7 @@ const FLY_PACKAGES = [
 const DolphinAdventureCard = () => {
     const { openBookingModal } = useBooking();
     return (
-        <section className="fly-section" id="packages" aria-label="Flight Packages">
+        <section className="fly-section" id="packages" aria-label="Activities and Stays">
             {/* Section header */}
             <div className="wnf-container fly-section__header">
                 <div className="fly-section__eyebrow">
@@ -235,8 +235,8 @@ const DolphinAdventureCard = () => {
                     <span className="fly-section__eyebrow-text">Choose Your Adventure</span>
                 </div>
                 <h2 className="fly-section__title MarginBottom50px">
-                    Two Ways to Fly.<br/>
-                    <span className="fly-section__title--accent">One Unforgettable Sky.</span>
+                    Water Sports & Stays.<br/>
+                    <span className="fly-section__title--accent">One Unforgettable Beach.</span>
                 </h2>
                 <br />
             </div>
